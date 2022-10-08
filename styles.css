@@ -44,8 +44,6 @@ h3 {
 	padding: 5px 15px 10px 15px;
 }
 
-
-/*Section for icons: save, share, print and jump to recipe*/
 menu {
     display: flex;
     align-items: center;
@@ -88,10 +86,6 @@ menu li {
     visibility: hidden;
 }
 
-
-/*Section for recipe*/
-
-
 #details h2, #ingredients h2, #directions h2 {
     font-size: 30px;
     text-align: center;
@@ -118,9 +112,6 @@ ol {
     line-height: 1.5;
 }
 
-
-
-/*Section for side dishes*/
 aside {
     background-color: #7ABFBF;
 }
@@ -307,9 +298,6 @@ nav div {
   margin-left: -50px;
 }
 
-
-
-/*Section for search bar*/
 .search-bar {
     display: flex;
     justify-content: center;
@@ -335,8 +323,6 @@ button {
 }
 
 
-/*Section for Social Media links*/
-
 #social nav {
     display: inline
     margin-top: -55px;
@@ -355,8 +341,6 @@ button {
 	display: inline-block
 }
 
-
-/*Section for footer*/
 
 footer {
     font-size: 20px;
@@ -394,7 +378,6 @@ footer img {
         margin-bottom: -75px;
     }
     
-    /*Section for icons: save, share, print and jump to recipe*/
     menu {
         justify-content: space-around;
         position: absolute;
@@ -409,7 +392,6 @@ footer img {
         background-color: #EB5428;
     }
 
-    /*Section for recipe*/
     #intro {
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
@@ -434,9 +416,6 @@ footer img {
         justify-content: center;
         text-align: center;
     }
-
-/*Section for side dishes*/
-
 
 	aside h2 {
 		margin-top: 5px;
@@ -485,7 +464,6 @@ footer img {
 		left: 110px;
 	}
 
-	/*Section for main navigation*/
 	#navbar {
 		width: 768px;
 		height: 255px;
@@ -535,15 +513,6 @@ footer img {
 		top: 55px;
 	}
 
-	.breakfast, .brunch, .lunch, .dinner, .appetizers, .desserts, .beverages {
-		visibility: visible;
-		display: flex;
-		position: relative;
-		top: -30px;
-		left: 15%;
-	}
-
-	/*Section for search bar*/
 	.search-bar {
 		display: flex;
 		position: fixed;
@@ -569,9 +538,6 @@ footer img {
 	   stroke: #FFFFFF;
 	}
 
-
-	/*Section for Social Media links*/
-
 	#social nav {
 		float: right;
 		margin-top: -35px;
@@ -594,11 +560,6 @@ footer img {
 		position: relative;
 		right: -40px;
 		top: -1px;
-	}
-
-	/*Section for footer*/
-	footer {
-		font-size: 20px;
 	}
 
 	footer p {
@@ -627,8 +588,6 @@ footer img {
         top: -10px;
         text-align: center;
     }
-    
-    /*Section for icons: save, share, print and jump to recipe*/
 
     menu {
         display: flex;
@@ -678,7 +637,6 @@ footer img {
         margin-left: 240px;
     }
 
-    /*Section for recipe*/
     .intro {
         width: 40%;
         margin-left: 87px;
@@ -691,7 +649,6 @@ footer img {
 
     }
 
-    /*Grid container for details section*/
     #details {
         margin-top: -4px;
 
@@ -733,7 +690,6 @@ footer img {
         background-color: #000000;
         color: #7ABFBF;
     }
-/*Section for side dishes*/
 
 	aside {
 		display: grid;
@@ -821,10 +777,6 @@ footer img {
 		top: 55px;
 	}
 
-	.breakfast, .brunch, .lunch, .dinner, .appetizers, .desserts, .beverages {
-		top: -30px;
-		left: 15%;
-	}
 
 	.icon-tabler-user-circle {
 		top: -10px;
@@ -836,7 +788,6 @@ footer img {
 		right: 27px;
 	  }
 
-	/*Section for search bar*/
 	.search-bar {
 		position: absolute;
 		top: 175px;
@@ -849,9 +800,6 @@ footer img {
 	}
 
 
-	/*Social Media links*/
-
-
 	.icon-tabler-brand-facebook,.icon-tabler-brand-instagram,.icon-tabler-brand-youtube, .icon {
 		position: relative;
 		right: 120px;
@@ -861,10 +809,6 @@ footer img {
 		right: 110px;
 	}
 
-	/*Section for footer*/
-	footer {
-		font-size: 20px;
-	}
 
 	footer p {
 		top: -70px;
