@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+
+body {
+    width: 414px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, nav a, nav span, figcaption, menu li, #social li, footer {
+    font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+
+p, li, dd, nav, input, dt {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#intro img {
+    width: 100%;
+}
+
+#intro p {
+	margin: 0 auto;
+	padding: 5px 15px 10px 15px;
+}
+
+
+/*Section for icons: save, share, print and jump to recipe*/
+menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+menu li {
+    color: #EB5428;
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.icon-tabler-download {
+    position: relative;
+    bottom: 20px;
+    right: 35px;
+}
+
+.icon-tabler-share {
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+}
+
+.icon-tabler-printer {
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+}
+
+.icon-tabler-file-symlink {
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+/*Section for recipe*/
+
+
+#details h2, #ingredients h2, #directions h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+dl {
+    display: flex;
+    margin-left: 15px;
+    line-height: 0.5;
+}
+
+dt {
+    margin-right: -20px;
+    font-weight: 700;
+}
+
+#ingredients ul {
+    list-style-type: square;
+    line-height: 2;
+}
+
+ol {
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+
+
+/*Section for side dishes*/
+aside {
+    background-color: #7ABFBF;
+}
+
+aside h2 {
+    padding-top: 5px;
+    text-align: center;
+}
+
+aside h3, p {
+	left: 20px;
+}
+.rating {
+    margin-top: -13px;
+    margin-bottom: -10px;
+    padding-left: 135px;
+}
+
+figcaption, .rating {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+.icon-tabler-star {
+    fill: #EB5428;
+}
+
+.icon-tabler-uncheck {
+    fill: white;
+}
+
+aside figure {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+figure:hover {
+    background-color: #FFAE42;
+}
+
+
+aside img {
+    position: absolute;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: -50px;
+}
+
+aside p {
+	padding-left: 130px;
+}
+
+aside svg {
+    position: relative;
+    top: 12px;
+    left: 130px;
+}
+
+aside figcaption {
+    position: relative;
+    bottom: 20px;
+    left: 135px;
+}
+
+/*Section for main navigation*/
+#navbar {
+    width: 414px;
+    height: 115px;
+    margin-top: -200
+		00px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    position: relative;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #FFFFFF;
+	text-align: center;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+ 
+#navbar li a {
+    display: block;
+    padding: 20px 20px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+nav span {
+	color: #EB5428;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1px;
+    position: relative;
+    user-select: none;
+}
+label svg {
+	margin-left: 25px;
+	margin-top: -37px;
+}
+#navbar label span {
+    display: block;
+    position: relative;
+    left: 73px;
+    bottom: -80px;
+    transition: background-color .2s ease-out;
+}
+
+#navbar label span:before, #navbar label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+#navbar label span:before {
+    top: 5px;
+}
+#navbar label span:after {
+    top: -5px;
+}
+#navbar input {
+    display: none;
+}
+#navbar input:checked ~ ul {
+    max-height: 500px;
+}
+#navbar input:checked ~ label span {
+    background: transparent;
+}
+
+#navbar input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+[href="#home"] {
+    position: absolute;
+    top: -8px;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
+
+.icon-tabler-tools-kitchen {
+  background-color: #EB5428;
+  position: absolute;
+  padding: 28px 80px;
+  left: 115px;
+  margin: 10px;
+}
+
+
+.icon-tabler-user-circle {
+  stroke: #EB5428;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+}
+
+#navbar a:hover, #navbar input:hover{
+  background-color: #EB5428;
+  color: #FFFFFF;
+}
+
+nav div {
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+
+
+/*Section for search bar*/
+.search-bar {
+    display: flex;
+    justify-content: center;
+    position: relative	;
+    top: 120px;
+}
+
+.search-bar input {
+    border: 3px solid #EB5428;
+    padding: 5px;
+    background-color: #FFFFFF;
+    width: 250px;
+}
+
+button {
+    background-color: #EB5428;
+    border-style: none;
+    cursor: pointer;
+}
+
+.icon-tabler-search {
+   stroke: #FFFFFF;
+}
+
+
+/*Section for Social Media links*/
+
+#social nav {
+    display: inline
+    margin-top: -55px;
+    margin-bottom: -100px;
+}
+
+#social li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+#social li {
+    list-style: none;
+	display: inline-block
+}
+
+
+/*Section for footer*/
+
+footer {
+    font-size: 20px;
+	font-weight: bold;
+}
+
+footer p {
+    position: relative;
+    top: 200px;
+    line-height: .2;
+    text-align: center;
+}
+footer img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -70px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+/*Media queries for medium screen*/
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+        transition: width .5s;
+        margin-top: 65px;
+    }
+
+    h1 {
+        text-align: left;
+        margin-left:15px;
+        margin-bottom: -75px;
+    }
+    
+    /*Section for icons: save, share, print and jump to recipe*/
+    menu {
+        justify-content: space-around;
+        position: absolute;
+        top: 200px;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 738px;
+        padding: 35px 15px 20px 15px;
+    }
+
+    .hover-menu:hover {
+        color: #FFFFFF;
+        background-color: #EB5428;
+    }
+
+    /*Section for recipe*/
+    #intro {
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-template-areas: 
+        'intro intro intro intro'
+        'details details details details'
+        'ingredients directions directions directions'
+        'inrgedients directions directions directions'
+        ;
+    }
+
+
+    #details  {
+        grid-area: details;
+    }
+
+    #directions {
+        grid-area: directions;
+    }
+
+    #details dl {
+        justify-content: center;
+        text-align: center;
+    }
+
+/*Section for side dishes*/
+
+
+	aside h2 {
+		margin-top: 5px;
+	}
+
+	.rating {
+		position: relative;
+		left: -218px;
+		bottom: 10px;
+		margin-bottom: -70px;
+		padding-left: 328px;
+		padding-right: 0px;
+		padding-bottom: 25px;
+	}
+
+	.side-dishes{
+		position: relative;
+		left: 110px;
+		bottom: 20px
+	}
+
+	aside figure {
+		padding-bottom: 25px;
+	}
+
+	figure:hover {
+		background-color: #FFAE42;
+	}
+
+	aside img {
+		position: absolute;
+		width: 100px;
+		margin-left: 0px;
+		margin-top: -80px;
+	}
+
+	aside svg {
+		position: relative;
+		top: 15px;
+		left: 170px;
+	}
+
+	aside figcaption {
+		position: relative;
+		bottom: 40px;
+		left: 110px;
+	}
+
+	/*Section for main navigation*/
+	#navbar {
+		width: 768px;
+		height: 255px;
+	}
+
+	#navbar li {
+		width: 115px;
+	}
+
+	#navbar a {
+		width: 70px;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+
+	#navbar label, #dropdown{
+		visibility: hidden;
+	}
+
+	[href="#home"] {
+		left: -70px;
+	}
+
+	.icon-tabler-tools-kitchen {
+	  background-color: #EB5428;
+	  position: absolute;
+	  padding: 28px 13px;
+	}
+
+	#navbar img {
+		width: 50px;
+	}
+
+	#navbar ul {
+		list-style: none;
+		overflow: visible;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 87px;
+	}
+
+	.nav-text {
+		position: relative;
+		top: 55px;
+	}
+
+	.breakfast, .brunch, .lunch, .dinner, .appetizers, .desserts, .beverages {
+		visibility: visible;
+		display: flex;
+		position: relative;
+		top: -30px;
+		left: 15%;
+	}
+
+	/*Section for search bar*/
+	.search-bar {
+		display: flex;
+		position: fixed;
+		top: 25px;
+		right: -255px;
+		z-index: 1;
+	}
+
+	.search-bar input {
+		border: 3px solid #EB5428;
+		padding: 5px;
+		background-color: #FFFFFF;
+		width: 250px;
+	}
+
+	button {
+		background-color: #EB5428;
+		border-style: none;
+		cursor: pointer;
+	}
+
+	.icon-tabler-search {
+	   stroke: #FFFFFF;
+	}
+
+
+	/*Section for Social Media links*/
+
+	#social nav {
+		float: right;
+		margin-top: -35px;
+		margin-right: 25px;
+	}
+
+	.fb, .youtube, .ig {
+		position: relative;
+		right: -50px;
+		top: -1px;
+	}
+
+	.icon-tabler-brand-facebook,.icon-tabler-brand-instagram,.icon-tabler-brand-youtube, .icon-tabler-brand-tiktok {
+		position: relative;
+		bottom: 20px;
+		right: 0px;
+	}
+
+	.tiktok {
+		position: relative;
+		right: -40px;
+		top: -1px;
+	}
+
+	/*Section for footer*/
+	footer {
+		font-size: 20px;
+	}
+
+	footer p {
+		top: 150px;
+		left: -200px;
+	}
+	footer img {
+		width: 30%;
+		top: -150px;
+		left: -200px;
+	}
+
+}
+
+/*Media queries for large screen*/
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+        transition: width .5s;
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+
+    h1 {
+        position: relative;
+        top: -10px;
+        text-align: center;
+    }
+    
+    /*Section for icons: save, share, print and jump to recipe*/
+
+    menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 328px;
+        background-color: rgba(255, 255, 255);
+        border: 2px solid #EB5428;
+        width: 60px;
+        height: 710px;
+    }
+
+    menu li {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    menu span {
+        position: relative;
+        bottom: -50px;
+    }
+
+    .hover-menu:hover {
+        color: #FFFFFF;
+        background-color: #EB5428;
+    }
+
+    .download {
+        margin-top: -100px;
+    }
+
+    .share {
+        margin-top: -195px;
+    }
+
+    .printer {
+        margin-top: -290px;
+    }
+
+    .jump {
+        margin-top: -390px;
+    }
+
+    .icon-tabler-download, .icon-tabler-share, .icon-tabler-printer, .icon-tabler-file-symlink {
+        margin-left: 240px;
+    }
+
+    /*Section for recipe*/
+    .intro {
+        width: 40%;
+        margin-left: 87px;
+    }
+
+    .intro img {
+        width: 50%;
+        margin-right: 40px;
+        line-height: 2;
+
+    }
+
+    /*Grid container for details section*/
+    #details {
+        margin-top: -4px;
+
+    }
+
+    #details dl {
+        display: grid;
+    }
+
+    #details dt {
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+    }
+
+    #details {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        'detail detail detail detail detail'
+        'dt dt dt dt dt'
+        'dd dd dd dd dd'
+        ;
+    } 
+
+    #details h2 {
+        grid-area: detail;
+    }
+
+    dt {
+        grid-area: dt;
+    }
+
+    dd {
+        grid-area: dd;
+    }
+
+    #details {
+        background-color: #000000;
+        color: #7ABFBF;
+    }
+/*Section for side dishes*/
+
+	aside {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	aside h2 {
+		margin-top: 5px;
+		margin-bottom: 100px;
+	}
+
+	.rating {
+		position: relative;
+		left: -220px;
+		bottom: -201px;
+		margin-left: 100px;
+		margin-bottom: -70px;
+		
+	}
+
+	.side-dishes{
+		position: relative;
+		left: 10px;
+		top: 200px
+	}
+
+	aside figure {
+		padding-bottom: 65px;
+	}
+
+	figure:hover {
+		background-color: #FFAE42;
+	}
+
+	aside img {
+		position: absolute;
+		width: 284.5px;
+		margin-left: 0px;
+		margin-top: -150px;
+	}
+
+	aside svg {
+		position: relative;
+		top: 72px;
+		left: 70px;
+	}
+
+	aside figcaption {
+		position: relative;
+		top: 180px;
+		left: 10px;
+	}
+
+	/*Section for main navigation*/
+	#navbar {
+		width: 1280px;
+		height: 162px;
+		z-index: 2;
+	}
+
+	[href="#home"] {
+		left: -90px;
+		top: 72px;
+	}
+
+	.icon-tabler-tools-kitchen {
+	  padding: 31px 13px;
+	}
+
+	#navbar img {
+		width: 50px;
+	}
+
+	#navbar ul {
+		list-style: none;
+		overflow: visible;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: -7px;
+	}
+
+	.nav-text {
+		position: relative;
+		top: 55px;
+	}
+
+	.breakfast, .brunch, .lunch, .dinner, .appetizers, .desserts, .beverages {
+		top: -30px;
+		left: 15%;
+	}
+
+	.icon-tabler-user-circle {
+		top: -10px;
+		left: 130px;
+	  }
+
+	.avatar {
+		top: 115px;
+		right: 27px;
+	  }
+
+	/*Section for search bar*/
+	.search-bar {
+		position: absolute;
+		top: 175px;
+		right: 0px;
+		z-index: 1;
+	}
+
+	.icon-tabler-search {
+	   top: 0px;
+	}
+
+
+	/*Social Media links*/
+
+
+	.icon-tabler-brand-facebook,.icon-tabler-brand-instagram,.icon-tabler-brand-youtube, .icon {
+		position: relative;
+		right: 120px;
+	}
+
+	.icon-tabler-brand-tiktok {
+		right: 110px;
+	}
+
+	/*Section for footer*/
+	footer {
+		font-size: 20px;
+	}
+
+	footer p {
+		top: -70px;
+		margin-right: 220px;
+	}
+	footer img {
+		width: 20%;
+		top: -150px;
+		margin-left: 210px;
+	}
+
+}
